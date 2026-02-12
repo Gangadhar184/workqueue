@@ -23,7 +23,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	// JSON
 	implementation 'com.fasterxml.jackson.core:jackson-databind'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
+
+	// Redis
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
 	// Logging
 	implementation 'org.springframework.boot:spring-boot-starter-logging'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
