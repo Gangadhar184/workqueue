@@ -5,6 +5,11 @@ spring:
     host: localhost
     port: 6379
 
+workqueue:
+  redis-queue-name: task_queue
+  worker:
+    threads: 3
+
 
 management:
   endpoints:
@@ -14,3 +19,6 @@ management:
   endpoint:
     health:
       show-details: always
+
+server:
+  port: 8080
